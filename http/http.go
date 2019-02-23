@@ -7,12 +7,14 @@ import (
 	Config "../config"
 )
 
+type Result struct {
+	Posters []interface{} `json:"posters"`
+}
+
 func HttpRequest(key string) []byte {
 
 	apiKey := Config.ApiKey
 	url := "https://api.themoviedb.org/3/movie/" + key + "?api_key=" + apiKey
-
-	// fmt.Println(url)
 
 	resp, err := http.Get(url)
 	
@@ -30,4 +32,6 @@ func HttpRequest(key string) []byte {
 	
 	return body
 }
+
+
 
