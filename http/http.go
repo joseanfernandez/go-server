@@ -7,10 +7,6 @@ import (
 	Config "../config"
 )
 
-type Result struct {
-	Posters []interface{} `json:"posters"`
-}
-
 func HttpRequest(key string) []byte {
 
 	apiKey := Config.ApiKey
