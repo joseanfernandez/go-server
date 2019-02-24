@@ -11,7 +11,7 @@ You must register for an API key.
 git clone https://github.com/joseanfernandez/go-server.git
 ```
 
-### Create your own config package
+#### Create your own config package
 ```console
 cd go-server
 mkdir config
