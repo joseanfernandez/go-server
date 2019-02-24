@@ -20,7 +20,7 @@ touch config.go
 ```
 
 #### config.go
-```console
+```go
 package config
 
 var ApiKey =  "YOUR_API_KEY"
